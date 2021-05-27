@@ -1,7 +1,7 @@
-variable "ami" {}
-variable "ec2_class" {}
-variable "key_pair" {}
-variable "subnet_1a" {}
 variable "product" {}
 variable "environment" {}
-variable "vpc_id" {}
+variable "vpc_cidr" {}
+variable "tenancy" {}
+variable "public_subnets" {}
+variable "private_subnets" {}
+variable "availability_zones" {}
