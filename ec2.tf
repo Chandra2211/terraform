@@ -8,4 +8,5 @@ resource "aws_instance" "ec2" {
   tags = {
     Name = "${var.product}.${var.environment}-ec2"
   }
+  user_data          = "${file("apache.sh")}"
 }
